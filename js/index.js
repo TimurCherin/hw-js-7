@@ -2,7 +2,7 @@
 let lang = "ua";
 switch (lang) {
     case "ua":
-        console.log("Я");
+        console.log("Січень");
         break;
 
     case "fr":
@@ -10,11 +10,11 @@ switch (lang) {
         break;
 
     case "en":
-        console.log("I");
+        console.log("January");
         break;
 
     case "ger":
-        console.log("Ich");
+        console.log("Januar");
         break;
 
         default:
@@ -204,11 +204,20 @@ while (counter <= 5) {
 for (let i = 1; i <= 5; i += 1) {
     console.log(i);
 }
-                                                        // ex 12
-let number = prompt("Введіть число більше 100");
+
+let myNumber = 1;
 do {
-   number = Number(number);
-} while (number >= 100)
+  console.log(myNumber);
+  myNumber += 1;
+} while (myNumber <= 5);
+                                                        // ex 12
+let number;
+do {
+  number = Number(prompt("Введіть число більше 100"));
+  if (!number) {
+    break;
+  }
+} while (number < 100);
                                                         // Додаткове завдання
 let contry = (prompt("Введіть назву країни у яку бажаєте замовити доставку")).toLocaleLowerCase();
 let costt;
