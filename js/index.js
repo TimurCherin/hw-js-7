@@ -43,7 +43,7 @@ switch (drink) {
             console.log("Ви не вибрали напій");
 }
                                                         // ex 3
-const question = prompt("Який день тижня?");
+const question = (prompt("Який день тижня?")).toLocaleLowerCase();
 let day;
 switch (question) {
     case "понеділок":
